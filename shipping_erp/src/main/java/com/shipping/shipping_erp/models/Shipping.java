@@ -26,8 +26,67 @@ public class Shipping {
     private List<ValueShipping> value_shipping;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<CepShipping> cep;
+    private List<AddressClient> cep;
 
+    public Shipping() {
+    }
+
+    public Shipping(String origin, String destination, List<ValueShipping> value_shipping, List<AddressClient> cep) {
+        this.origin = origin;
+        this.destination = destination;
+        this.value_shipping = value_shipping;
+        this.cep = cep;
+    }
+
+    public UUID getShippingId() {
+        return shippingId;
+    }
+
+    public void setShippingId(UUID shippingId) {
+        this.shippingId = shippingId;
+    }
+
+    public UUID getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(UUID customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public List<ValueShipping> getValue_shipping() {
+        return value_shipping;
+    }
+
+    public void setValue_shipping(List<ValueShipping> value_shipping) {
+        this.value_shipping = value_shipping;
+    }
+
+    public List<AddressClient> getCep() {
+        return cep;
+    }
+
+    public void setCep(List<AddressClient> cep) {
+        this.cep = cep;
+    }
+
+    
     
     
 
