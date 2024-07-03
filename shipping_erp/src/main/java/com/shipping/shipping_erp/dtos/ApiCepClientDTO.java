@@ -3,15 +3,16 @@ package com.shipping.shipping_erp.dtos;
 public class ApiCepClientDTO {
     
     private String cep;
-    private String logradouro;
-    private String complemento;
-    private String bairro;
-    private String localidade;
-    private String uf;
-    private String ibge;
-    private String gia;
+    private String addressType;
+    private String addressName;
+    private String address;
+    private String district;
+    private String city;
+    private String state;
+    private String lat;
+    private String lng;
     private String ddd;
-    private String siafi;
+    private String cityIbge;
     
     public String getCep() {
         return cep;
@@ -19,47 +20,53 @@ public class ApiCepClientDTO {
     public void setCep(String cep) {
         this.cep = cep;
     }
-    public String getLogradouro() {
-        return logradouro;
+    public String getAddressType() {
+        return addressType;
     }
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setAddressType(String addressType) {
+        this.addressType = addressType;
     }
-    public String getComplemento() {
-        return complemento;
+    public String getAddressName() {
+        return addressName;
     }
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
+    public void setAddressName(String addressName) {
+        this.addressName = addressName;
     }
-    public String getBairro() {
-        return bairro;
+    public String getAddress() {
+        return address;
     }
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setAddress(String address) {
+        this.address = address;
     }
-    public String getLocalidade() {
-        return localidade;
+    public String getDistrict() {
+        return district;
     }
-    public void setLocalidade(String localidade) {
-        this.localidade = localidade;
+    public void setDistrict(String district) {
+        this.district = district;
     }
-    public String getUf() {
-        return uf;
+    public String getCity() {
+        return city;
     }
-    public void setUf(String uf) {
-        this.uf = uf;
+    public void setCity(String city) {
+        this.city = city;
     }
-    public String getIbge() {
-        return ibge;
+    public String getState() {
+        return state;
     }
-    public void setIbge(String ibge) {
-        this.ibge = ibge;
+    public void setState(String state) {
+        this.state = state;
     }
-    public String getGia() {
-        return gia;
+    public String getLat() {
+        return lat;
     }
-    public void setGia(String gia) {
-        this.gia = gia;
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+    public String getLng() {
+        return lng;
+    }
+    public void setLng(String lng) {
+        this.lng = lng;
     }
     public String getDdd() {
         return ddd;
@@ -67,12 +74,13 @@ public class ApiCepClientDTO {
     public void setDdd(String ddd) {
         this.ddd = ddd;
     }
-    public String getSiafi() {
-        return siafi;
+    public String getCityIbge() {
+        return cityIbge;
     }
-    public void setSiafi(String siafi) {
-        this.siafi = siafi;
+    public void setCityIbge(String cityIbge) {
+        this.cityIbge = cityIbge;
     }
 
+    
     
 }

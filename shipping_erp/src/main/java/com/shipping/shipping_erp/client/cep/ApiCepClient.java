@@ -1,4 +1,4 @@
-package com.shipping.shipping_erp.client;
+package com.shipping.shipping_erp.client.cep;
 
 import com.shipping.shipping_erp.dtos.ApiCepClientDTO;
 
