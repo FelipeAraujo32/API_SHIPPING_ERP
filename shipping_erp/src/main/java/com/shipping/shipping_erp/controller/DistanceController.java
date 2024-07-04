@@ -5,16 +5,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.shipping.shipping_erp.dtos.ApiDistanceClientDTO;
-import com.shipping.shipping_erp.service.ValueShippingService;
+import com.shipping.shipping_erp.service.DistanceShippingService;
 
 import reactor.core.publisher.Mono;
 
 @RestController
 public class DistanceController {
 
-    private final ValueShippingService service;
+    private final DistanceShippingService service;
 
-    public DistanceController(ValueShippingService service) {
+    public DistanceController(DistanceShippingService service) {
         this.service = service;
     }
 

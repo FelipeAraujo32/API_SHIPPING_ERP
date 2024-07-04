@@ -11,11 +11,11 @@ import reactor.core.publisher.Mono;
 
 
 @Service
-public class ValueShippingService {
+public class DistanceShippingService {
 
     private final DistanceClientFactory distanceClientFactory;
 
-    public ValueShippingService(DistanceClientFactory distanceClientFactory) {
+    public DistanceShippingService(DistanceClientFactory distanceClientFactory) {
         this.distanceClientFactory = distanceClientFactory;
     }
 

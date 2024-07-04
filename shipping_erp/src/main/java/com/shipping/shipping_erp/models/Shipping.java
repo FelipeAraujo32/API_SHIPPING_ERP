@@ -27,6 +27,6 @@ public class Shipping {
     private AddressDestination destination;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private ValueShipping value_shipping;
+    private DistanceShipping value_shipping;
 
 }
