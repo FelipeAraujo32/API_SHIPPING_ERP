@@ -9,8 +9,8 @@ public class ApiCepClientDTO {
     private String district;
     private String city;
     private String state;
-    private String lat;
-    private String lng;
+    private double lat;
+    private double lng;
     private String ddd;
     private String cityIbge;
     
@@ -56,16 +56,16 @@ public class ApiCepClientDTO {
     public void setState(String state) {
         this.state = state;
     }
-    public String getLat() {
+    public double getLat() {
         return lat;
     }
-    public void setLat(String lat) {
+    public void setLat(double lat) {
         this.lat = lat;
     }
-    public String getLng() {
+    public double getLng() {
         return lng;
     }
-    public void setLng(String lng) {
+    public void setLng(double lng) {
         this.lng = lng;
     }
     public String getDdd() {

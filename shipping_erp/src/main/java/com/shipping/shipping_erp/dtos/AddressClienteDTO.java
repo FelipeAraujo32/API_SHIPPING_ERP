@@ -6,8 +6,8 @@ public class AddressClienteDTO {
     private String neighborhood;
     private String city;
     private String state;
-    private String latitude;
-    private String longitude;
+    private double latitude;
+    private double longitude;
     
     public String getStreet() {
         return street;
@@ -33,20 +33,17 @@ public class AddressClienteDTO {
     public void setState(String state) {
         this.state = state;
     }
-    public String getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
-    public void setLatitude(String latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
-    public String getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
-    public void setLongitude(String longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
-    
-
-    
 }

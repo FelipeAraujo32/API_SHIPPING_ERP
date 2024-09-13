@@ -1,26 +1,24 @@
 package com.shipping.shipping_erp.client.cep;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.client.RestTemplate;
 
 import com.shipping.shipping_erp.dtos.ApiCepClientDTO;
 
-import reactor.core.publisher.Mono;
 
 @Component
 public class ApiCepClientImpl implements ApiCepClient{
 
-    private final WebClient webClient;
+    private final RestTemplate restTemplate;
+    private static final String BASE_URL = "https://cep.awesomeapi.com.br/json";
 
-    public ApiCepClientImpl(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("https://cep.awesomeapi.com.br/json")
-                .build();
+    public ApiCepClientImpl(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
-    public Mono<ApiCepClientDTO> getAddressByCep(String cep){
-        return this.webClient.get()
-            .uri("/{cep}", cep)
-            .retrieve()
-            .bodyToMono(ApiCepClientDTO.class);
+    @Override
+    public ApiCepClientDTO getAddressByCep(String cep) {
+        String url = String.format("%s/%s", BASE_URL, cep);
+        return restTemplate.getForObject(url, ApiCepClientDTO.class);
     }
 }
