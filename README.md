@@ -86,15 +86,3 @@ Com a aplicação no ar:
 
 - Swagger UI: `http://localhost:8081/swagger-ui/index.html`
 
----
-
-## 🧪 Qualidade e próximos passos
-
-### Melhorias planejadas
-
-- [ ] Adicionar testes unitários e de integração
-- [ ] Cobrir cenários de erro de APIs externas
-- [ ] Incluir autenticação/autorização
-- [ ] Containerização com Docker Compose (API + DB + dependências)
-- [ ] Pipeline CI (build, test, lint)
-
