@@ -12,7 +12,7 @@
 	<artifactId>shipping_erp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>shipping_erp</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Shipping ERP API for freight simulation with CEP lookup, distance integration, and PostgreSQL persistence.</description>
 	<url/>
 	<licenses>
 		<license/>
